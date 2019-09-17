@@ -1,0 +1,196 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+    background-color: #ECEAE0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Global*/
+.container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    background: #FF9900;
+    font-size: medium ;
+    border: 0;
+    padding: 5px 10px;
+    color: darkblue;
+}
+
+.dark{
+    background-color: #2b2e42;
+    color: #929292;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+/*Header*/
+header{
+    background-color: #D05A00;
+    color: #FEFFF8;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #434E3C 3px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+#branding{
+    float: left;
+}
+#branding h1{
+    margin:0;
+}
+header nav{
+    float: right;
+    margin-top: 12px;
+    font-size: 16px;
+}
+header .highlight, header .current a{
+    color:#2B2B2B;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/*ShowCase*/
+#showcase{
+    min-height: 500px;
+    background-image: url('../img/del.jpg');
+    object-fit: contain;
+    background-position-y:-250px;
+    background-position-x: 150px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color:whitesmoke;
+}
+#showcase h1{
+    font-size: 30px;
+    padding-left: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#showcase p{
+    padding: 80px;
+    font-size: 20px;
+}
+
+#subscribe{
+    padding: 10px;
+    color:#ffffff;
+    background: #D05A00;
+}
+#subscribe h1{
+    float: left;
+}
+#subscribe form{
+    padding-top: 20px;
+    float: right;
+}
+#subscribe input{
+    padding: 1px;
+    height: 30px;
+    width: 190px;
+}
+
+/*Boxes*/
+#boxes{
+margin: 25px;
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+}
+#boxes .box img{
+    padding: 5px;
+    width: 150px;
+}
+
+
+/*About Page*/
+
+article#main-col{
+    float:left;
+    width: 50%;
+    margin-top: 10px;
+}
+
+aside#sidebar{
+float:right;
+width: 45%;
+margin-top: 10px;
+}
+
+/*Service Page*/
+.types{
+    margin:20px;
+    list-style-type: square;
+    width: 50%;
+}
+.types li{
+    float: left;
+    padding: 10px;
+    font-size:medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#sidebar img{
+    margin-top: 20px;
+    float: left;
+    width:100%;
+    height: 240px;
+}
+
+
+footer{
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #D05A00;
+    color: white;
+    float:center;
+    text-align: right;
+}
+
+/*MediaQuery*/
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li, #subscribe h1,
+    #subscribe form,#boxes .box,
+    article#main-col,aside#sidebar,.types
+    {
+        float: none;
+        text-align: center;
+        width: 100%
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    .types{
+        list-style-type: none;
+    }
+}
